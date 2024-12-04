@@ -1,0 +1,574 @@
+/*ÁLTLÁNOS*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.115)), url("kepek/london.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto";
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+/*CONTAINERS*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    align-items: baseline;
+}
+
+.container>* {
+    height: fit-content;
+    margin: 1%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+.info article {
+    flex: 1 1 100%;
+}
+
+#above {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    height: fit-content;
+}
+
+/*OLDALSZERKEZETI EGYSÉGEK*/
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    text-decoration: line-through;
+    font-size: 50px;
+}
+
+header h5 {
+    padding-bottom: 40px;
+    color: #606973;
+    font-style: italic;
+}
+
+aside.first {
+    background: linear-gradient(rgba(139, 51, 7, 0.852), rgba(20, 4, 4, 0.721)), rgb(139, 51, 7);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    flex: 1 1 100%;
+}
+
+aside.second {
+    background: linear-gradient(rgb(174, 1, 1), rgba(20, 4, 4, 0.721)) rgb(180, 0, 0);
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 15px;
+    flex: 1 1 100%;
+}
+
+aside.third {
+    background: linear-gradient(rgba(6, 104, 19, 0.852), rgba(20, 4, 4, 0.721)) rgb(6, 104, 19);
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    flex: 1 1 100%;
+}
+
+aside h1 {
+    font-size: 30px;
+}
+
+aside h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+aside p {
+    font-size: 20px;
+    line-height: 1.4em;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+article.last {
+    padding-bottom: 15px;
+}
+
+section.abouttext {
+    font-size: 20px;
+    line-height: 1.4em;
+    padding: 25px;
+    text-align: justify;
+}
+
+article h2 {
+    padding-left: 40px;
+    font-size: 30px;
+    color: #457c9e;
+}
+
+nav h1 {
+    text-align: center;
+    padding-top: 55px;
+    margin: 0;
+    font-size: 33px;
+}
+
+div.historical {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+div p {
+    line-height: 1.4em;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+#landmarkfirst {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+
+/*MENÜK*/
+
+#menu {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#menu ul {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+#menu ul li {
+    margin: 0;
+    flex: 1 1 100%;
+}
+
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    padding: 15px;
+    flex-grow: 1;
+    margin: 0;
+}
+
+#menu a#current {
+    color: #457c9e;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+#explore ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    text-align: center;
+    margin-left: 0;
+    padding: 15px;
+}
+
+#explore ul li {
+    font-weight: bold;
+}
+
+#explore ul li a {
+    background-color: white;
+    color: #457c9e;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    border: #457c9e 3px solid;
+    border-radius: 15px;
+    margin: 9px;
+    padding: 10px;
+}
+
+#explore ul li a:hover {
+    color: white;
+    background-color: #457c9e;
+}
+
+/*CLASS*/
+
+.about {
+    font-size: 35px;
+}
+
+.lower {
+    padding-bottom: 10px;
+}
+
+.feher {
+    background-color: white;
+    margin: 0px;
+}
+
+.szurke {
+    background-color: #f0f3f7;
+    padding-bottom: 15px;
+}
+
+.feher h1 {
+    margin-top: 0px;
+    padding-top: 35px;
+}
+
+.spaceabove {
+    margin-top: 400px;
+    padding: 25px;
+}
+
+.picture img {
+    height: 100%;
+    width: 100%;
+}
+
+.apply {
+    margin: 25px;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+}
+
+.westminster {
+    background-color: rgb(139, 51, 7);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 100%;
+}
+
+.calling {
+    background-color: #606973;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 100%;
+}
+
+.square {
+    background-color: #457c9e;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 100%;
+}
+
+.grass {
+    background-color: #3c7625;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 100%;
+}
+
+.p {
+    line-height: 1.4em;
+}
+
+.funfact {
+    background: linear-gradient(rgba(69, 124, 158), rgb(193, 10, 50));
+    color: white;
+    border-radius: 15px;
+    margin: 25px;
+    padding: 20px;
+}
+
+#tour {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#tourtypes {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+/*GALÉRIA*/
+
+.center {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+/*ŰRLAP*/
+
+input.mybutton {
+    border-radius: 15px;
+    width: 95px;
+    height: 36px;
+    color: #457c9e;
+    border: #457c9e outset 3px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input.mybutton:hover {
+    background-color: #457c9e;
+    color: white;
+}
+
+input.mytextbox {
+    height: 35px;
+    width: 400px;
+    border: #457c9e solid 2px;
+    border-radius: 10px;
+}
+
+input.mytextbox2 {
+    height: 35px;
+    width: 300px;
+    border: #457c9e solid 2px;
+    border-radius: 10px;
+}
+
+.mybox {
+    height: 35px;
+    width: 200px;
+    border: #457c9e solid 2px;
+    border-radius: 10px;
+}
+
+.boxsize {
+    height: 70px;
+}
+
+.quiz {
+    background-color: white;
+    border-radius: 15px;
+    margin: 30px;
+    margin-bottom: 0;
+    text-align: justify;
+    padding: 10px;
+}
+
+.quiz p {
+    text-align: justify;
+    margin: 15px;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+label.error {
+    color: #FB3A3A;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.small {
+    font-size: 5px;
+}
+
+.questions {
+    padding: 25px;
+    border-image: linear-gradient(45deg, rgb(69, 124, 158), rgb(193, 10, 50));
+    border: #457c9e solid 4px;
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+#TopButton {
+    margin: 40px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+#CountButton {
+    width: 120px;
+}
+
+/*MEDIA QUERY*/
+
+@media only screen and (min-width: 600px) {
+
+    /*tablet*/
+    #menu ul {
+        flex-basis: 20%;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    #explore ul {
+        flex-basis: 20%;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /*számítógép*/
+    div.explore {
+        flex-basis: 48%;
+    }
+
+    aside.first {
+        flex-basis: 33%;
+    }
+
+    aside.second {
+        flex-basis: 33%;
+    }
+
+    aside.third {
+        flex-basis: 33%;
+    }
+
+    article.upper {
+        flex-basis: 48%;
+    }
+
+    article.lower {
+        flex-basis: 48%
+    }
+
+    #above {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        flex-basis: 24%;
+    }
+
+    .info {
+        flex-flow: row wrap;
+    }
+
+    .info article {
+        flex-basis: 48%;
+    }
+
+    #menu ul {
+        flex-basis: 20%;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    #explore ul {
+        flex-basis: 20%;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    #tourtypes {
+        flex-flow: row wrap;
+    }
+
+    article.westminster {
+        flex-basis: 48%;
+    }
+
+    article.calling {
+        flex-basis: 48%;
+    }
+
+    article.square {
+        flex-basis: 48%;
+    }
+
+    article.grass {
+        flex-basis: 48%;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container>* {
+        height: fit-content;
+        margin: 1%;
+    }
+
+    .quiz {
+        margin: 70px;
+        margin-bottom: 0;
+    }
+
+    form {
+        flex-basis: 48%;
+    }
+}

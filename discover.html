@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitos András">
+    <meta name="copyright" content="Discover page of The London Guide.">
+    <title>The London Guide.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Geist:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <script src="javascript/toTop.js"></script>
+    <style>
+        .slider {
+            width: 80%;
+            min-width: 400px;
+            margin: 30px auto;
+            margin-bottom: 100px;
+        }
+
+        .slick-slide {
+            margin: 0px 5px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+            margin: 0 auto;
+        }
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>The London Guide.</h1>
+        <h5>Explore the English capital with us.</h5>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a id="current" href="#">Discover</a> </li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="quiz.html">Quiz</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="feher">
+        <div class="szurke">
+            <h1 class="title">The city in pictures.</h1>
+            <section class="center slider">
+                <div><img src="kepek/bigben.jpg" alt="bigben"></div>
+                <div><img src="kepek/westminsterabbey.jpg" alt="westminsterabbey"></div>
+                <div><img src="kepek/palaceofwestminster.jpg" alt="palaceofwestminster"></div>
+                <div><img src="kepek/toweroflondon.jpg" alt="toweroflondon"></div>
+                <div><img src="kepek/towerbridge.jpg" alt="towerbridge"></div>
+                <div><img src="kepek/buckinghampalace.jpg" alt="buckinghampalace"></div>
+                <div><img src="kepek/stpaulcathedral.jpg" alt="stpaulcathedral"></div>
+                <div><img src="kepek/londoneye.jpg" alt="londoneye"></div>
+                <div><img src="kepek/shard.jpg" alt="shard"></div>
+                <div><img src="kepek/gherkin.jpg" alt="gherkin"></div>
+                <div><img src="kepek/cityhall.jpg" alt="cityhall"></div>
+                <div><img src="kepek/skygarden.jpg" alt="skygarden"></div>
+                <div><img src="kepek/nationalgallery.jpg" alt="nationalgallery"></div>
+                <div><img src="kepek/britishmuseum.jpg" alt="britishmuseum"></div>
+                <div><img src="kepek/naturalhm.jpg" alt="naturalhm"></div>
+                <div><img src="kepek/greenwich.jpg" alt="greenwich"></div>
+                <div><img src="kepek/stjames.jpg" alt="stjames"></div>
+                <div><img src="kepek/kensington.jpg" alt="kensington"></div>
+                <div><img src="kepek/batterseapark.jpg" alt="battersea"></div>
+                <div><img src="kepek/picadilly.jpg" alt="picadilly"></div>
+                <div><img src="kepek/trafalgar.jpg" alt="trafalgar"></div>
+                <div><img src="kepek/chinatown.jpg" alt="chinatown"></div>
+                <div><img src="kepek/covent.jpg" alt="coventgarden"></div>
+                <div><img src="kepek/canarywharf.jpg" alt="canary"></div>
+                <div><img src="kepek/millennium.jpg" alt="millennium"></div>
+                <div><img src="kepek/london2.jpg" alt="london"></div>
+            </section>
+        </div>
+        <nav id="explore">
+            <h1>Get to know the attractions.</h1><br>
+            <ul>
+                <li><a href="#historical">Historical landmarks</a></li>
+                <li><a href="#modern">Modern landmarks</a></li>
+                <li><a href="#museums">Museums</a></li>
+                <li><a href="#parks">Parks</a></li>
+                <li><a href="#others">Others</a></li>
+            </ul>
+        </nav>
+
+        <aside class="funfact">
+            <h2>Did you know this?</h2>
+            <p>The city has the oldest subway in the world. Otherwise known as the Tube, London Underground was opened
+                in 1863 for locomotive trains. In 1890, it became the world’s first metro system when electric trains
+                began operating.</p>
+            <p>In 1969, Queen Elizabeth II became the first royal to take the tube when she opened the Victoria Line.
+                She has actually taken the tube a few times. She had a front seat on the DLR when it opened in 1987 and
+                rode the tube again in 2013 to mark the 150th anniversary of the London Underground.</p>
+        </aside>
+
+        <div class="historical">
+            <h1 class="title"><a id="historical">Historical landmarks</a></h1>
+            <div class="info">
+                <article>
+                    <h2>Big Ben</h2>
+                    <p>The world's most famous clock tower is probably the Elizabeth Tower in London. Yes, you've read
+                        it right, that is the tower's original name, but for most people, it had always been known as
+                        Big Ben. The landmark is situated right nex to river Thames by the Palace of Westminster and
+                        Westminster Abbey.</p>
+                </article>
+                <article>
+                    <h2>Westminster Abbey</h2>
+                    <p>This cathedral is in Westminster and is about a 3 minute walk from the Parliament. Westminster
+                        Abbey is gothic style church and was finished in 1269. It is a cathedral for the Church of
+                        England.</p>
+                </article>
+                <article>
+                    <h2>Palace of Westminster</h2>
+                    <p>The Palace of Westminster is the meeting place of the Parliament of the United Kingdom. It is
+                        commonly called the Houses of Parliament after the House of Commons and the House of Lords, the
+                        two legislative chambers which occupy the building.</p>
+                </article>
+                <article>
+                    <h2>Tower of London</h2>
+                    <p>This castle is also known as His Majesty's Royal Palace and Fortress of the Tower of London and
+                        is situated right next to Tower Bridge on the north bank of River Thames. In times of war and
+                        rebellion, the tower has guarded royal posession and the royal family as well.</p>
+                </article>
+                <article>
+                    <h2>Tower Bridge</h2>
+                    <p>The most symbolic bridge in london is situated next to the Tower of London, made out of concrete
+                        and metals, which caused this enormous bridge to neve collapse throughout history and stands
+                        still since 1894. Occasionally the bridge gets opened for ships coming in london, blocking the
+                        traffic for at least 20 minutes.</p>
+                </article>
+                <article>
+                    <h2>Kensington Palace</h2>
+                    <p>Kensington Palace is an exceptional palace in Kensington Gardens, perfect location for a sunny
+                        afternoon walk. The palace acts as the official london residence for The Prince and Princess of
+                        Wales and their children.</p>
+                </article>
+                <article>
+                    <h2>Buckingham Palace</h2>
+                    <p>Probably the most beautiful palace in whole London, the Buckingham palace is located next to St.
+                        James's Park. The palace is a royal residence and the administrative headquarters for the
+                        monarch of the United Kingdom. If your are lucky when visiting, you might see the famous
+                        Changing of the Guard, when the iconic black-hatted soldiers change guards.</p>
+                </article>
+                <article>
+                    <h2>St. Paul's Cathedral</h2>
+                    <p>The formal name of St. Paul's Cathedral is the Cathedral Chruch of St. Paul the Apostle. This
+                        Anglican cathedral is located on Ludgate Hill, which is the highest point of the City of London.
+                        The cathedral serves as the mother church of the Diocese of London and as the seat of the Bishop
+                        of London. </p>
+                </article>
+            </div>
+            <br>
+            <hr>
+            <h1 class="title"><a id="modern">Modern Landmarks</a></h1>
+            <div class="info">
+                <article>
+                    <h2>The London Eye</h2>
+                    <p>The London Eye, also known as the Millenium Wheel is cantilevered observation wheel, probably the
+                        most famous one in the world. It is set on the South Bank of River Thames right across the
+                        Palace of Westminster. This is the tallest observation wheel in Europe, and the most popular
+                        paid tourist attraction in the United Kingdom with over three million visitors annually.</p>
+                </article>
+                <article>
+                    <h2>The Shard</h2>
+                    <p>The Shard, also referred to as the Shard London Bridge and formerly London Bridge Tower, is a
+                        pyramid-shaped 72-storey mixed-use development supertall skyscraper, designed by the Italian
+                        architect Renzo Piano. It reaches the height of 310 metres, has 87 floor and it is the tallest
+                        skyscraper in the United Kingdom.</p>
+                </article>
+                <article>
+                    <h2>The Gherkin</h2>
+                    <p>The Gherkin, officially 30 St Mary Axe and previously known as the Swiss Re Building, is a
+                        commercial skyscraper in London's primary financial district, the City of London. It is often
+                        called a cucumber because of its unique shape, but because of this it is probably one of the
+                        most iconic skyscrapers in the city.</p>
+                </article>
+                <article>
+                    <h2>City Hall</h2>
+                    <p>City Hall is a building in Southwark, London, which previously served as the headquarters of the
+                        Greater London Authority between July 2002 and December 2021. It is located in the London
+                        Borough of Southwark, on the south bank of the River Thames near Tower Bridge.</p>
+                </article>
+                <article>
+                    <h2>One Canada Square</h2>
+                    <p>One Canada Square is a skyscraper in Canary Wharf, London. It is the third tallest building in
+                        the United Kingdom at 235 metres above ground level, and contains 50 storeys. The building if
+                        used for offices mostly, though there are some retail units on the lower ground floor. The
+                        building is recognised as a London landmark and it has gained much attention through film,
+                        television and other media because of its status.</p>
+                </article>
+                <article>
+                    <h2>20 Fenchurch St</h2>
+                    <p>20 Fenchurch Street is a commercial skyscraper in London that takes its name from its address on
+                        Fenchurch Street, in the historic City of London financial district. It has been nicknamed "The
+                        Walkie-Talkie" because of its distinctive shape, said to resemble a walkie-talkie handset. It
+                        has a free-to-visit skygarden at the top with an unmatched view of the city.</p>
+                </article>
+            </div>
+
+            <br>
+            <hr>
+            <h1 class="title"><a id="museums">Museums</a></h1>
+            <div class="info">
+                <article>
+                    <h2>The National Gallery</h2>
+                    <p>The National Gallery is an art museum in Trafalgar Square in the City of Westminster. Founded in
+                        1824, it houses a collection of more than 2,300 paintings dating from the mid-13th century to
+                        1900. Its fame comes from the fact that it houses one of the greatest collections of paintings
+                        in the world. These pictures belong to the public and entrance to see them is free.</p>
+                </article>
+                <article>
+                    <h2>The British Museum</h2>
+                    <p>The British Museum is a public museum dedicated to human history, art and culture located in the
+                        Bloomsbury area of London. Its permanent collection of eight million works is the largest in the
+                        world. It documents the story of human culture from its beginnings to the present.</p>
+                </article>
+                <article>
+                    <h2>Tate Modern</h2>
+                    <p>Tate Modern is an art gallery in London, housing the United Kingdom's national collection of
+                        international modern and contemporary art. It forms part of the Tate group together with Tate
+                        Britain, Tate Liverpool and Tate St Ives.</p>
+                </article>
+                <article>
+                    <h2>Natural History Museum</h2>
+                    <p>The Natural History Museum in London is a museum that exhibits a vast range of specimens from
+                        various segments of natural history. It is one of three major museums on Exhibition Road in
+                        South Kensington, the others being the Science Museum and the Victoria and Albert Museum.</p>
+                </article>
+            </div>
+            <br>
+            <hr>
+            <h1 class="title"><a id="parks">Parks</a></h1>
+            <div class="info">
+                <article>
+                    <h2>Hyde Park</h2>
+                    <p>Hyde Park is a 350-acre, historic Grade I-listed urban park in Westminster, Greater London. A
+                        Royal Park, it is the largest of the parks and green spaces that form a chain from Kensington
+                        Palace through Kensington Gardens and Hyde Park, via Hyde Park Corner and Green Park, past
+                        Buckingham Palace to St James's Park. </p>
+                </article>
+                <article>
+                    <h2>Greenwich Park</h2>
+                    <p>Greenwich Park is a former hunting park in Greenwich and one of the largest single green spaces
+                        in south-east London. One of the Royal Parks of London, and the first to be enclosed, it covers
+                        74 hectares, and is part of the Greenwich World Heritage Site. From this park visitors get an
+                        excellent panoramic view of Canary Wharf.</p>
+                </article>
+                <article>
+                    <h2>St. James's Park</h2>
+                    <p>St James's Park is a 23-hectare urban park in the City of Westminster, central London. A Royal
+                        Park, it is at the southernmost end of the St James's area, which was named after a once
+                        isolated medieval hospital dedicated to St James the Less, now the site of St James's Palace.
+                    </p>
+                </article>
+                <article>
+                    <h2>The Regent's Park</h2>
+                    <p>Regent's Park is one of the Royal Parks of London. It occupies 410 acres in north-west Inner
+                        London, administratively split between the City of Westminster and the Borough of Camden. This
+                        park is a perfect place to visit during any time of the day, and just laying in the calming
+                        green for hours.</p>
+                </article>
+                <article>
+                    <h2>Kensington Gardens</h2>
+                    <p>Kensington Gardens, once the private gardens of Kensington Palace, are among the Royal Parks of
+                        London. The gardens are shared by the City of Westminster and the Royal Borough of Kensington
+                        and Chelsea and sit immediately to the west of Hyde Park, in western central London known as the
+                        West End.</p>
+                </article>
+                <article>
+                    <h2>Battersea Park</h2>
+                    <p>Battersea Park is a 200-acre green space at Battersea in the London Borough of Wandsworth right
+                        next to the Battersea Power Station. It is situated on the south bank of the River Thames
+                        opposite Chelsea and was opened in 1858. The park occupies marshland reclaimed from the Thames
+                        and land formerly used for market gardens.</p>
+                </article>
+            </div>
+            <br>
+            <hr>
+            <h1 class="title"><a id="others">Others</a></h1>
+            <div class="info">
+                <article>
+                    <h2>Picadilly Circus</h2>
+                    <p>Piccadilly Circus is a road junction and public space of London's West End in the City of
+                        Westminster. It was built in 1819 to connect Regent Street with Piccadilly. In this context, a
+                        circus, from the Latin word meaning "circle", is a round open space at a street junction.
+                        Similar to the Times Square in New York City, this sqaure is mostly notable for its catchy
+                        digital billboards.</p>
+                </article>
+                <article>
+                    <h2>Trafalgar Square</h2>
+                    <p>Trafalgar Square is a public square in the City of Westminster, right in front of The National
+                        Gallery. Trafalgar Square is named after Britain's victory in the Battle of Trafalgar in 1805,
+                        and had been established in the early 19th century around the area formerly known as Charing
+                        Cross. Be you visit a fortunate one, because sometimes English football clubs' fans fill the
+                        whole square with life. </p>
+                </article>
+                <article>
+                    <h2>Chinatown</h2>
+                    <p>The authentic chinese district is home to several restaurants bakeries and literally every type
+                        of shops. The vibe is fantastic, the vibrant colors and cultures among the streets of this
+                        district is spectacular here every day but can be overcrowded sometimes.</p>
+                </article>
+                <article>
+                    <h2>Covent Garden</h2>
+                    <p>A shopping and entertainment hub in London's West End, Covent Garden centres on the elegant,
+                        car-free Piazza, home to fashion stores, craft stalls at the Apple Market, and the Royal Opera
+                        House. Street entertainers perform by 17th-century St. Paul’s Church, and the London Transport
+                        Museum houses vintage vehicles. Upscale restaurants serve European cuisines, and nearby theatres
+                        draw crowds for plays and musicals.</p>
+                </article>
+                <article>
+                    <h2>Canary Wharf</h2>
+                    <p>Canary Wharf is an area of London located near the Isle of Dogs in the London Borough of Tower
+                        Hamlets. Canary Wharf is defined by the Greater London Authority as being part of London's
+                        central business district, alongside Central London.</p>
+                </article>
+                <article class="last">
+                    <h2>Millennium Bridge</h2>
+                    <p>The Millennium Bridge, officially known as the London Millennium Footbridge, is a steel
+                        suspension bridge for pedestrians crossing the River Thames in London, England, linking Bankside
+                        with the City of London. This bridge might be familiar to you if you are a Harry Potter fan.</p>
+                </article>
+            </div>
+        </div>
+        <input onclick="toTopFunction()" class="mybutton" type="button" value="Back to top" id="TopButton">
+    </div>
+    <footer>
+        <p>Vitos András © 2024</p>
+    </footer>
+    <script src="jquery-3.7.1.min.js" type="text/javascript">
+    </script>
+    <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8">
+    </script>
+    <script src="javascript/slider.js"></script>
+</body>
+
+</html>

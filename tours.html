@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitos András">
+    <meta name="copyright" content="Tours page of The London Guide.">
+    <title>The London Guide.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="javascript/counter.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Geist:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>The London Guide.</h1>
+        <h5>Explore the English capital with us.</h5>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="discover.html">Discover</a> </li>
+                <li><a id="current" href="#">Tours</a></li>
+                <li><a href="quiz.html">Quiz</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="tour" class="feher">
+        <article>
+            <h1 class="title">Join the ride and discover the city's treasures!</h1>
+            <p>We are known mostly because of our tour service, which is a popular way to explore London. We offer
+                customers a complete detailed guide about the locations as well as give them an unforgettable experience
+                on the journey. You can choose out of 4 tours, each showcasing the different faces of London.</p>
+        </article>
+        <div id="tourtypes">
+            <article class="westminster felso">
+                <h1 class="title">Welcome Westminster</h1>
+                <p>This tour is for those who are captivated by the historical side of London and would like to explore
+                    the district of Westminster. Passengers receive complete information on the sights such as the
+                    Westminster Abbey, Buckingham Palace, and the Place of Westminster of course! The bus tour begins
+                    its journey at Tate Britain, takes a stop at St. James's Park, and finishes on Westminster Bridge.
+                </p>
+                <p>Length of tour: appr. 5 hours</p>
+            </article>
+            <article class="calling felso">
+                <h1 class="title">London Calling</h1>
+                <p>In this tour, we go around the famous districts of Soho, Mayfair and Covent Garden, visting the most
+                    nominal landmarks like Trafalgar Square, the Chinatown, Picadilly Circus, The British Museum, The
+                    National Gallery and more! Of course with such a busy schedule we freshen up by taking a break the
+                    largest park in London (Hyde Park). This tour is colorful and an optimal choice for those who are
+                    intersted in visiting these landmarks.</p>
+                <p>Length of tour: appr. 4 hours</p>
+            </article>
+            <article class="square also">
+                <h1 class="title">The Square Mile</h1>
+                <p>The title is actually a nickname of the district we are exploring in this tour. If you guessed the
+                    City of London, you are correct! This district offers a lot to visitors in terms of modern
+                    architecture. During this tour we take a look at the most famous skyscrapers like 20 Fenchurch St,
+                    the Gherkin, and a lot more. At least on hour of this tour is dedicated to the skygarden which is a
+                    free-to-visit location with an unmatched panoramic view of London. Apart from this, of course, the
+                    Tower of London and the St. Paul's Cathedral are two historical buildings we just can't miss.</p>
+                <p>Length of tour: appr. 4 hours</p>
+            </article>
+            <article class="grass also">
+                <h1 class="title">Grass to Glass</h1>
+                <p>This tour is for those who are not intimidated by some extra bus ride, because it takes a while to
+                    travel through the city. We begin in the calming green area of Greewich, especially to see the
+                    Meridian, and the travelling through Canary Wharf and Tower Bridge to reach the City Hall and the
+                    Shard, two modern architectural pieces. As the tour's name, the tour's structure has a strong
+                    contrast as well, as we start in the green grass and finish among the grey and the glass. </p>
+                <p>Length of tour: appr. 5 hours</p>
+            </article>
+        </div>
+        <div class="container">
+            <form class="apply">
+                <h2 class="title">Count the price of your tour here</h2>
+                <p>Single ticket price for adults: £20 <br>
+                    Single ticket price for children (age 14 and below): £10<br>
+                    <em>(Please keep that in mind that the prices can change depending in tour type.)</em><br>
+                </p>
+                <h3>Tour's prices</h3>
+                <label for="lista">Tour type</label><br>
+                <select class="mybox boxsize" size="4" id="lista">
+                    <option>Welcome Westminster</option>
+                    <option>London Calling</option>
+                    <option>The Square Mile</option>
+                    <option>Grass to Glass</option>
+                </select><br><br>
+                <label for="adults">Number of adults (max. 5)</label><br>
+                <input class="mybox" name="adults" id="adults" type="number" min="1" max="5" step="1"><br><br>
+                <label for="children">Number of children (max. 5)</label><br>
+                <input class="mybox" name="children" id="children" type="number" min="1" max="5" step="1"><br><br>
+                <label for="price">Your total price:</label><br>
+                <input class="mybox" type="text" id="price" value="£">
+                <input onclick="counterFunction()" class="mybutton" type="button" value="Count price" id="CountButton">
+            </form>
+            <hr>
+            <form class="apply" id="myform" method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php"
+                novalidate>
+                <h2 class="title">Apply to one of our organized tours.</h2><br>
+                <label for="firstname">First name </label><br>
+                <input class="mytextbox" type="text" name="firstname" id="firstname" size="30"><br><br>
+                <label for="surname">Surname </label><br>
+                <input class="mytextbox" type="text" name="surname" id="surname" size="30"><br><br>
+                <label for="email">E-mail </label><br>
+                <input class="mytextbox" type="email" name="email" id="email" size="30"><br><br>
+                <label for="phone">Phone number </label><br>
+                <input class="mytextbox" type="tel" name="phonenumber" id="phone" size="30"><br><br>
+                <label for="tourtype">Select tour type</label><br>
+                <select class="mybox" name="tour" id="tourtype" size="1">
+                    <option value="1">Welcome Westminster</option>
+                    <option value="2">London Calling</option>
+                    <option value="3">The Square Mile</option>
+                    <option value="4">Grass to Glass</option>
+                </select><br><br>
+                <label for="date">Date of tour</label><br>
+                <input class="mybox" type="date" name="date" id="date"><br><br>
+                <label>How can we contact you</label><br>
+                <input type="radio" name="contact" id="contact1" value="phone"> Phone<br>
+                <input type="radio" name="contact" id="contact2" value="email" checked> E-mail <br><br>
+                <input type="checkbox" name="subscribe" value="ON"> <em>I would like to receive offers and deals on
+                    tours to
+                    my inbox.</em><br><br>
+                <input class="mybutton" type="submit" name="elkuldes" value="Submit">
+                <input class="mybutton" type="reset" name="alaphelyzet" value="Reset">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Vitos András © 2024</p>
+    </footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="javascript/validate.js"></script>
+</body>
+
+</html>
