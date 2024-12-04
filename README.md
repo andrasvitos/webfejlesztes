@@ -3,6 +3,9 @@ A webfejlesztés tárgy beadandója.
 
 Készítő neve: Vitos András
 
+A weboldalam ezen a linken található: https://github.com/andrasvitos/webfejlesztes
+A weboldalam linkje: https://andrasvitos.github.io/webfejlesztes/
+
 Az oldal Londonról szól. A város nevezetességeiről lehet információt találni, továbbá saját városnéző körutakra is lehet jelentkezni.
 
 A JS kódom a 3. (Tours) oldalon található, ami egy jegyár kalkulátor a felnőtt és gyermek utasok megadása alapján.
